@@ -24,7 +24,7 @@ def create_app():
     db.init_app(app)
     # register extensions
     migrate = Migrate(app, db)
-    # create_database(app)
+
     db.create_all(app=app)
     return app
 
